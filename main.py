@@ -2,8 +2,7 @@ import os
 from shutil import copyfile
 
 dir_path = os.getcwd()
-# inFolder = os.path.join(dir_path, "in")
-inFolder = '/home/joel/.config/desmume/'
+inFolder = os.path.join(dir_path, "in")
 outFolder = os.path.join(dir_path, "out")
 
 trimSize = 122
