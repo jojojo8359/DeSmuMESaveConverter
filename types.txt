@@ -1,0 +1,58 @@
+Acekard R.P.G. - .sav (same as raw)
+Action Replay DS Max - .duc
+Action Replay DS Media Edition - .duc
+Action Replay DSi - .duc
+CycloDS - .sav (same as raw)
+EDGE - .sav (same as raw)
+EZ Flash V - .sav (same as raw)
+G6 DS Real - .0 (same as raw, different file format)
+iEDGE - .sav (same as raw)
+M3 DS Real - .0 (same as raw, different file format)
+M3 Simply - .sav (same as raw)
+M3i Zero - .sav (same as raw)
+Ninja DS - .sav (same as raw)
+R4 - .sav (same as raw)
+Supercard CF - .sav (same as raw)
+Supercard SD - .sav (same as raw)
+TTDS - .sav (same as raw)
+TTDSi - .sav (same as raw)
+
+.duc (ARDSM): (500 byte header)
+
+16 byte "game id" ("ARDS000000000001" for Action Replay DS)
+46 byte game name (with "00" bytes in between each character, rest is "00")
+18 byte separator (00, 17th byte "2E")
+62 byte save name (with "00" bytes in between each character, rest is "00")
+2 byte separator (00 00)
+140 byte save description (with "00" bytes in between each character, rest is "00")
+60 byte separator (00's)
+23 byte game name (no spacing, rest "00")
+6 byte separator (00, last byte 0D)
+31 byte save file name (no spacing, rest "00")
+1 byte separator (00)
+70 byte save description (no spacing, rest "00")
+25 byte footer (all 00)
+normal save file
+
+(With help from https://projectpokemon.org/home/uploads/monthly_2009_08/DUC_Structure.txt.f0af49605bdadbfa9536f1665990d0c5.txt)
+
+.duc (ARDSME): (164 byte header)
+4 byte header (00)
+23 byte game name (no spacing, rest 00)
+5 byte separator (A1 00 00 00 00)
+31 byte save file name (no spacing, rest 00)
+2 byte separator (00 00)
+70 byte save description (no spacing, rest 00)
+30 byte footer (00 x29, C0)
+normal save file
+
+.duc (ARDSi): (164 byte header)
+4 byte header (00)
+23 byte game name (no spacing, rest 00)
+5 byte separator (A1 00 00 00 00)
+31 byte save file name (no spacing, rest 00)
+2 byte separator (00 00)
+70? byte save description (no spacing, rest 00)
+29? byte footer (00, last 2 bytes 08 C0)
+normal save file
+
